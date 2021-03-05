@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Happy Birthday</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/png/Heart.png}"/>
+    <link rel="stylesheet" href="css/bootstrap.minNeu.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/navbar.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+
+<nav class="navbar navbar-expand-lg border-bottom">
+    <a class="navbar-brand active" th:href="@{/index}">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse border-left" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/quiz}">Mein Quiz</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row">
+    <h1>
+        <text>Happy 25th Birthday!</text>
+    </h1>
+</div>
+
+<div class="row">
+    <h2>
+        <text>
+            Donnerstag, der 18. März 2021
+        </text>
+        <!-- <script type="text/javascript" src="js/datum.js"></script>-->
+    </h2>
+</div>
+
+<div class="row" style="float: left; margin-left: 2rem">
+<!--    <div class="container">-->
+        <div class="col-sm">
+            <img src="png/Fabi.png">
+        </div>
+        <div class="col-sm">
+            <img src="png/Hottie.png">
+        </div>
+        <div class="col-sm">
+            <img src="png/MagicalNight.png">
+        </div>
+        <div class="col-sm">
+            <img src="png/Suit2.png">
+        </div>
+        <div class="col-sm">
+            <img src="png/Dark.png">
+        </div>
+<!--        <div class="overlay"></div>-->
+<!--    </div>-->
+</div>
+
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+</body>
+</html>
