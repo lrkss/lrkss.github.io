@@ -1,10 +1,12 @@
 websiteProject\model\TaskChoice.class
-websiteProject\service\KalenderPopulationService.class
 websiteProject\model\Task.class
 websiteProject\controller\MainController.class
+websiteProject\dao\TaskChoiceDao.class
 websiteProject\dao\TaskDao.class
 websiteProject\form\TaskForm.class
 websiteProject\form\ChoiceForm.class
 websiteProject\model\Choice.class
 websiteProject\WebsiteProjectApplication.class
 websiteProject\dao\ChoiceDao.class
+websiteProject\form\TaskChoiceForm.class
+websiteProject\model\TaskChoicePK.class

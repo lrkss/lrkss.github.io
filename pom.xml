@@ -8,11 +8,11 @@
 		<version>2.2.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.WebsiteProject</groupId>
-	<artifactId>WebsiteProject</artifactId>
+	<groupId>com.Website</groupId>
+	<artifactId>Website</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Website-Project</name>
+	<name>Website</name>
 	<description>Geburtstagsgeschenk</description>
 
 	<properties>

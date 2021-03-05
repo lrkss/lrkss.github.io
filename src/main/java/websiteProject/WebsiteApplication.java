@@ -7,11 +7,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class WebsiteProjectApplication {
+public class WebsiteApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(WebsiteProjectApplication.class, args);
+		SpringApplication.run(WebsiteApplication.class, args);
 
 	}
 
