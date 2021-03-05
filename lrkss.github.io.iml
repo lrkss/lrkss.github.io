@@ -25,7 +25,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="Website-Project" />
+          <factory-entry name="Website" />
           <factory-entry name="entityManagerFactory" value="38a530d6-feba-4bc2-8df0-b2b0f0420e4e" />
         </datasource-mapping>
         <naming-strategy-map />
