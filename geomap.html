@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/bootstrap.minNeu.css">
+    <link rel="stylesheet" href="css/dashboard.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--Load the AJAX API for google charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/geomap.js"></script>
+</head>
+
+<body>
+<div id='map_canvas'></div>
+<form name="myWebForm" action="http://localhost:63342/lrkss.github.io/geomap.html" method="get">
+    <input type="hidden" name="region" value="DE" />
+    <table>
+        <tr><td>Baden-Württemberg:</td><td><input type="text" name="DE-BW" value="9" size="3"></td></tr>
+        <tr><td>Bayern:</td><td><input type="text" name="DE-BY" value="8" size="3"></td></tr>
+        <tr><td>Berlin:</td><td><input type="text" name="DE-BE" value="8" size="3"></td></tr>
+        <tr><td>Brandenburg:</td><td><input type="text" name="DE-BB" value="0" size="3"></td></tr>
+        <tr><td>Bremen:</td><td><input type="text" name="DE-HB" value="8" size="3"></td></tr>
+        <tr><td>Hamburg:</td><td><input type="text" name="DE-HH" value="5" size="3"></td></tr>
+        <tr><td>Hessen:</td><td><input type="text" name="DE-HE" value="6" size="3"></td></tr>
+        <tr><td>Mecklenburg-Vorpommern:</td><td><input type="text" name="DE-MV" value="5" size="3"></td></tr>
+        <tr><td>Niedersachsen:</td><td><input type="text" name="DE-NI" value="10" size="3"></td></tr>
+        <tr><td>Nordrhein-Westfalen:</td><td><input type="text" name="DE-NW" value="8" size="3"></td></tr>
+        <tr><td>Rheinland-Pfalz:</td><td><input type="text" name="DE-RP" value="1" size="3"></td></tr>
+        <tr><td>Saarland:</td><td><input type="text" name="DE-SL" value="3" size="3"></td></tr>
+        <tr><td>Sachsen:</td><td><input type="text" name="DE-SN" value="10" size="3"></td></tr>
+        <tr><td>Sachsen-Anhalt:</td><td><input type="text" name="DE-ST" value="9" size="3"></td></tr>
+        <tr><td>Schleswig-Holstein:</td><td><input type="text" name="DE-SH" value="3" size="3"></td></tr>
+        <tr><td>Thüringen:</td><td><input type="text" name="DE-TH" value="10" size="3"></td></tr>
+    </table>
+    <input type="submit" value="GET MAP" />
+</form>
+</body>
+
+</body>
+</html>
