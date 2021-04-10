@@ -15,33 +15,40 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">Home</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Navigation</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse border-left" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="quiz.html">Mein Quiz</a>
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
 </nav>
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm-4 d-flex justify-content-center">
         <!--Div that will hold the pie chart from the javascript file-->
         <div id="pie_chart"></div>
     </div>
-    <div id="area_chart" style="width: 630px; height: 350px;"></div>
+    <div class="col-sm-8 d-flex justify-content-center">
+        <div id="area_chart" style="width: 504px; height: 280px;"></div>
+    </div>
 </div>
+<br>
 <div class="row">
-<!--    <div id="geochart-colors" style="width: 700px; height: 433px;"></div>-->
-    <div id="map_canvas" style="width: 700px; height: 433px;"></div>
+    <div class="col-sm-4 d-flex justify-content-center">
+        <div id="map_canvas" style="width: 490px; height: 303px;"></div>
+    </div>
 </div>
 </body>
 </html>

@@ -1,15 +1,9 @@
-body{
-    background-color: #303030;
-    /*position: fixed;*/
+body {
+    background-color: #424242;
+    /*CSS Klasse um horizontalen Scrollbalken ausblenden:*/
     overflow-x: hidden;
     width: 100%;
 }
-
-/*CSS Klasse um vertikalen Scrollbalken ausblenden:*/
-/*.l-no-vertical-scroll {overflow-y: hidden}*/
-
-/*CSS Klasse um horizontalen Scrollbalken ausblenden:*/
-/*.l-no-horizontal-scroll {overflow-x: hidden}*/
 
 .card {
     background-color: whitesmoke;
@@ -30,10 +24,10 @@ img {
     text-align: center;
 }
 
-a{
-    color:white;
+a {
+    color: #d3d3d3;
     font-weight: bold;
-    font-style:normal;
+    font-style: normal;
 }
 
 table {
@@ -44,19 +38,6 @@ table th, table td {
     padding: 5px;
 }
 
-.navbar-expand-lg{
-    background-color: #212121;
-    /*border-bottom-color: whitesmoke;*/
-}
-
-.navbar a:hover {
-    color: whitesmoke;
-}
-
-.navbar-collapse ul li a:hover {
-    color: whitesmoke;
-}
-
-.active {
-    text-decoration: underline;
+.navbar {
+    margin-bottom: 2rem;
 }

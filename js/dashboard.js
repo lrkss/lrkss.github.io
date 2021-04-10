@@ -1,5 +1,5 @@
 // Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages': ['corechart']});
 
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(drawChart);
@@ -23,9 +23,11 @@ function drawPieChart() {
     ]);
 
     // Set chart options
-    var options = {'title':'How Much Pizza I Ate Last Night',
-        'width':400,
-        'height':300};
+    var options = {
+        'title': 'How Much Pizza I Ate Last Night',
+        'width': 400,
+        'height': 300
+    };
 
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
@@ -35,15 +37,15 @@ function drawPieChart() {
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Year', 'Sales', 'Expenses'],
-        ['2013',  1000,      400],
-        ['2014',  1170,      460],
-        ['2015',  660,       1120],
-        ['2016',  1030,      540]
+        ['2013', 1000, 400],
+        ['2014', 1170, 460],
+        ['2015', 660, 1120],
+        ['2016', 1030, 540]
     ]);
 
     var options = {
         title: 'Company Performance',
-        hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+        hAxis: {title: 'Year', titleTextStyle: {color: '#333'}},
         vAxis: {minValue: 0}
     };
 
@@ -52,17 +54,13 @@ function drawChart() {
 }
 
 google.charts.load('current', {
-    'packages':['geochart'],
-    // Note: you will need to get a mapsApiKey for your project.
-    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-    'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    'packages': ['geochart'], 'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
 });
 google.charts.setOnLoadCallback(drawRegionsMap);
 
 function drawRegionsMap() {
     var data = google.visualization.arrayToDataTable([
-        // ['Country',   'Latitude'], ['Germany', -3]
-        ['Province', 'Latitude'], ['North Rhine-Westphalia', -3]
+        ['Country',   'Latitude'], ['Germany', -3]
     ]);
 
     var options = {
@@ -73,6 +71,6 @@ function drawRegionsMap() {
         defaultColor: '#f5f5f5',
     };
 
-    var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+    var chart = new google.visualization.GeoChart(document.getElementById('eu_map'));
     chart.draw(data, options);
 };
